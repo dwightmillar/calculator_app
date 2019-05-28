@@ -1,3 +1,8 @@
+var calculationArray = [];
+var displayArray = [];
+var stringNumberToPush = '';
+var calculationResult = null;
+
 $(document).ready(initializeApp);
 
 function initializeApp() {
@@ -11,17 +16,10 @@ function applyClickHandlers() {
 }
 
 function numberButtonHandler(event) {
-    console.log(event);
 }
 
 function operatorButtonHandler(event) {
-    console.log(event);
 }
 
 function equalsButtonHandler(event) {
-    console.log(event);
 }
-var calculationArray = [];
-var displayArray = [];
-var stringNumberToPush = '';
-var calculationResult = null;
