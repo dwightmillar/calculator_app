@@ -24,6 +24,10 @@ function numberButtonHandler(event) {
 }
 
 function operatorButtonHandler(event) {
+    var inputtedOperator = '';
+    inputtedOperator = $(event.currentTarget).find("p").text();
+    displayArray.push(inputtedOperator);
+    updateDisplay()
 }
 
 function equalsButtonHandler(event) {
