@@ -34,6 +34,10 @@ function operatorButtonHandler(event) {
 }
 
 function equalsButtonHandler(event) {
+    calculationArray.push(stringNumberToPush);
+    stringNumberToPush = '';
+    displayArray = [];
+    console.log(calculationArray);
 }
 
 function updateDisplay() {
