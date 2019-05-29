@@ -31,7 +31,6 @@ function operatorButtonHandler(event) {
     calculationArray.push(stringNumberToPush);
     calculationArray.push(inputtedOperator);
     stringNumberToPush = '';
-    console.log('calculationArray: ',calculationArray);
 }
 
 function equalsButtonHandler(event) {
