@@ -27,7 +27,11 @@ function operatorButtonHandler(event) {
     var inputtedOperator = '';
     inputtedOperator = $(event.currentTarget).find("p").text();
     displayArray.push(inputtedOperator);
-    updateDisplay()
+    updateDisplay();
+    calculationArray.push(stringNumberToPush);
+    calculationArray.push(inputtedOperator);
+    stringNumberToPush = '';
+    console.log('calculationArray: ',calculationArray);
 }
 
 function equalsButtonHandler(event) {
