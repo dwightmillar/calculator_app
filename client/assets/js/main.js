@@ -16,10 +16,20 @@ function applyClickHandlers() {
 }
 
 function numberButtonHandler(event) {
+    var inputtedNumber = '';
+    inputtedNumber = $(event.currentTarget).find("p").text();
+    stringNumberToPush = stringNumberToPush + inputtedNumber;
+    displayArray.push(inputtedNumber);
+    updateDisplay()
 }
 
 function operatorButtonHandler(event) {
 }
 
 function equalsButtonHandler(event) {
+}
+
+function updateDisplay() {
+    var displayText = displayArray.join("");
+    $('#display-text').text(displayText);
 }
